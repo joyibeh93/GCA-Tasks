@@ -4,24 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
   </head>
-  <body>
+  <body onload="arrayHandler()">
     <h1>Simple Calculator Task</h1>
     <div>
       <form onSubmit ="return false">
         <input type="text" placeholder="enter a number" id="firstNumber" />
         <input type="text" placeholder="enter a number" id='secondNumber'/>
         <p id="result"></p>
-        <small id="smalltext"></small>
+      <p class="text"><small id="smalltext"></small></p>
+        
         <button onclick="calculatorHandler('add')">Add</button>
         <button onclick="calculatorHandler('subtract')">Subtract</button>
         <button onclick="calculatorHandler('divide')">Divide</button>
-        <button onclick="calculatorHandler('multiply')">Multiply</button>
+        <buttton onclick="calculatorHandler('multiply')">Multiply</button>
         <button onclick="calculatorHandler('modulo')">Modulo</button>
         <button onclick="calculatorHandler('percent')">Percentage</button>
       </form>
      
+    </div>
+    <h2> Adding List to an item </h2>
+    <div>
+      <ol id="olList"></ol>
+      <input type="text" id="marketList">
+      <div>
+        <button onclick="addmarketListHandler()">Add</button>
+        <button onclick="removemarketListHandler()">pop</button>
+        <button onclick="shiftmarketListHandler()">Shift</button>
+        <button onclick="unshiftmarketListHandler()">unshift</button>
+      </div>
+    
     </div>
     <script src="./index.js"></script>
   </body>
