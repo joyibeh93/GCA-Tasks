@@ -8,20 +8,36 @@
     <title>Document</title>
   </head>
   <body onload="arrayHandler()">
-    <h1>Simple Calculator Task</h1>
-    <div>
+   
+    <div class="calulator-container">
+      <h1>Simple Calculator Task</h1>
       <form onSubmit ="return false">
-        <input type="text" placeholder="enter a number" id="firstNumber" />
-        <input type="text" placeholder="enter a number" id='secondNumber'/>
-        <p id="result"></p>
-      <p class="text"><small id="smalltext"></small></p>
+        <div class="formElement">
+          <div>
+            <input type="text" placeholder="enter a number" id="firstNumber" />
+            <input type="text" placeholder="enter a number" id='secondNumber'/>
+          </div>
+          <div class="showResult">
+            <p id="result" class="result2"></p>
+            <p class="text"><small id="smalltext"></small></p>
+          </div>
+        </div>
         
+        
+       
+
+      <div class="btn-grp">
         <button onclick="calculatorHandler('add')">Add</button>
         <button onclick="calculatorHandler('subtract')">Subtract</button>
         <button onclick="calculatorHandler('divide')">Divide</button>
-        <buttton onclick="calculatorHandler('multiply')">Multiply</button>
+      </div> 
+      <div class="btn-grp">
+        <button onclick="calculatorHandler('multiply')">Multiply</button>
         <button onclick="calculatorHandler('modulo')">Modulo</button>
         <button onclick="calculatorHandler('percent')">Percentage</button>
+      </div> 
+        
+        
       </form>
      
     </div>

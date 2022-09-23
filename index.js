@@ -59,6 +59,7 @@ function addmarketListHandler() {
 
   }
  
+ 
   
 
   //console.log(myMarketList, "ARRAY");
