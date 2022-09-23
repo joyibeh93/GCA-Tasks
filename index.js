@@ -59,7 +59,18 @@ function addmarketListHandler() {
 
   }
  
- 
+
+  // FETCHING API
+
+  const resp = async () =>{
+    const response = await fetch("https://reqres.in/api/unknown/",{method:'GET'})
+    const data = await response.json();
+    console.log(data,'Response');
+    const colorList= data.data[0]
+
+  }
+
+  // fetch('https://reqres.in/api/unknown/',{method:"GET"}).then(data =>console.log(data))
   
 
   //console.log(myMarketList, "ARRAY");
